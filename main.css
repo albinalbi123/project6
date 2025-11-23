@@ -627,6 +627,7 @@ margin-bottom: 40px ;
 /* ----------------seivice-------------- */
 .contact-sec{
   background-color: var(--back-color);
+     padding: 0px 10px;
 }
 .contact-sec form{
   max-width: 600px;
@@ -1351,4 +1352,5 @@ margin-bottom: 20px;
 }
 
 }
+
 
