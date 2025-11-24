@@ -77,7 +77,7 @@ text-transform:uppercase;
   font-family: "Courgette", cursive;
   font-weight: 400;
   font-style: normal;
-color:var(--color);
+color:white;
 }
 
 /* ------------------section2-------------- */
@@ -1427,4 +1427,5 @@ margin-bottom: 20px;
 }
 
 }
+
 
