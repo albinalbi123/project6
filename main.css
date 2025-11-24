@@ -19,17 +19,18 @@ p{
 
 /* a4ac86  ff8fab*/
 :root{
-    --color:white;
+    --color:black;
     --background-color:#99582a;
-    --main-color:#344e41;
-    --back-color: #3a5a40;
+    --main-color:#ff8fab;
+    --back-color: #c9184a02;
+    --swip-color: #bb184663;
 }
 .over{
   overflow: hidden;
 }
 .navbar{
     /* background-color:; */
-    background-color: var(--back-color);
+    background-color: var(--swip-color);
 }
 .navbar-brand img{
   width: 80px;
@@ -42,6 +43,9 @@ color: var(--color);
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-style: italic;
+}
+.navbar-toggler-icon{
+
 }
 /* #mynavbar  ul li a{} */
 
@@ -80,7 +84,7 @@ color:var(--color);
 
 .sec2{
     min-height: 100px;
-    background-image: url(images/OIP.jpeg);
+    /* background-image: url(images/OIP.jpeg); */
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -95,9 +99,9 @@ color:var(--color);
 .box1{
     width: 350px;
     height: 250px;
-    background-color:#40916c;
+    background-color:#c9184a;
     border-radius: 20px;
-    color: var(--color);
+    color:white;
   font-family: "Agbalumo", system-ui;
   /* font-weight: 400; */
   font-style: normal;
@@ -114,9 +118,9 @@ padding-top: 20px;
 .box2{
     width: 350px;
     height: 250px;
-    background-color:#2d6a4f;
+    background-color:#a4133c;
     border-radius: 20px;
-    color: var(--color);
+    color: white;
   font-family: "Agbalumo", system-ui;
   /* font-weight: 400; */
   font-style: normal;
@@ -138,9 +142,9 @@ color: #ff0a54;
 .box3{
     width: 350px;
     height: 250px;
-    background-color:#1b4332 ;
+    background-color:#c9184a ;
     border-radius: 20px;
-    color: var(--color);
+    color: white;
   font-family: "Agbalumo", system-ui;
   /* font-weight: 400; */
   font-style: normal;
@@ -155,13 +159,13 @@ padding-top: 20px;
 
 }
 .box1:hover,.box2:hover,.box3:hover{
-        box-shadow: 10px 10px 80px rgba(23, 23, 23, 0.555);
+        box-shadow: 10px 10px 80px rgb(102, 2, 18);
 }
 /*---------------------
   Product #880d1d87
 -----------------------*/
 .sec5{
-  background-color:var(--back-color);
+  background-color:var();
 }
 .productbox{
   width: 300px;
@@ -324,14 +328,14 @@ padding-top: 20px;
       font-weight: 400;
       font-style: normal;
         box-shadow: 10px 5px 30px rgba(0, 0, 0, 0.307);
-        background-color:var(--back-color);
+        background-color:var(--swip-color);
         color: white;
         border:solid 2px ;
 
     }
 .swiper-slide:hover{
-   background-color: var(--color); 
-    border: solid 3px #40916c;
+   background-color: white; 
+    /* border: solid 3px #40916c; */
      color: #111111;
 }
     .catbox{
@@ -369,7 +373,7 @@ padding-top: 20px;
 
 .sec4{
 min-height: 300px;
-background-color: var(--back-color);
+background-color: white;
 border-bottom: solid white;
     }
 .menubox{
@@ -425,6 +429,7 @@ border-bottom: solid white;
 
 .sec7{
   min-height: 200px;
+  border-bottom: solid 4px var(--swip-color);
 }
 .box4{
     font-family: "Courgette", cursive !important;
@@ -627,7 +632,7 @@ margin-bottom: 40px ;
 /* ----------------seivice-------------- */
 .contact-sec{
   background-color: var(--back-color);
-     padding: 0px 10px;
+  padding: 0px 10px;
 }
 .contact-sec form{
   max-width: 600px;
@@ -647,6 +652,39 @@ color: #111111;
 
 }
 
+/* ----------------productdetails-------------- */
+.productdetails{
+  min-height: 200px;
+background-color: var(--back-color);
+padding: 20px;
+}
+.productdetailbox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.productbox1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.productin1{
+  width: 100px;
+  padding: 10px;
+}
+.productbox2{
+  width: 400px;
+}
+.productbox3{
+  width: 100%;
+  height: 100%;
+  color: var(--color);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* ----------------footer-------------- */
 
 footer{
@@ -836,10 +874,10 @@ font-size: 10px !important;
   
 }
 .box5 h3{
-font-size: 15px !important;
+font-size: 20px !important;
 }
 .box5 p{
-font-size: 10px !important;
+font-size: 15px !important;
 }
 .box5 i{
 font-size: 40px !important;
@@ -912,7 +950,20 @@ font-size: 25px;
 .servicebox2 p{
 font-size: 15px;
 }
-
+/* -----------------------------productdetails--------------------------- */
+.productbox1{
+  flex-direction: row;
+}
+.productdetailbox{
+  display: flex;
+  flex-direction: column;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+}
+.productbox2{
+  width: 300px;
+}
 }
 
 @media(max-width:768px){
@@ -1046,15 +1097,35 @@ font-size: 20px;
 .servicebox2 p{
 font-size: 10px;
 }
+/* -----------------------------productdetails--------------------------- */
 
+.productbox1{
+  flex-direction: row;
+}
+.productin1{
+  width: 60px;
+}
+.productbox2{
+  width: 200px;
+}
 
+.productdetailbox{
+  display: flex;
+  flex-direction: column;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+}
+.productbox3 p{
+font-size: 10px;
+}
 footer h3{
   margin-bottom: 30px ;
-  font-size: 10px;
+  font-size: 15px;
 
 }
 .footerbox2 p ,.footerbox1 p{
-font-size: 7px;
+font-size: 10px;
 
 }
 .footerbox2 h3 ,.footerbox1 h3{
@@ -1101,10 +1172,10 @@ margin: 0px;
 }
 footer h3{
   margin-bottom: 30px ;
-  font-size: 10px;
+  font-size: 15px;
 }
 .footerbox2 p ,.footerbox1 p{
-font-size: 5px;
+font-size: 10px;
 }
 .footerbox3 p{
     display: flex;
@@ -1233,11 +1304,14 @@ font-size: 8px;
 padding: 5px;
 margin: 0px;
 }
+.about-sec4 {
+  padding: 0px 10px;
+}
 .about-sec4 h3{
-  font-size: 15px;
+  font-size: 13px;
 }
 .about-sec4 p{
-  font-size: 8px;
+  font-size: 10px;
 }
 /*-------------------- service---------------- */
 .service-sec1{
@@ -1286,19 +1360,20 @@ font-size: 8px !important;
 /* -----------------------------About #fde5d2--------------------------- */
 
 .aboutbox1{
-max-width: 350px;
-height:100px ;
+max-width: 400px;
+height:130px ;
   transform: translateY(-50px);
+
 }
 .aboutinbox1{
   font-size: 15px;
   max-width: 270px;
 }
 .aboutinbox1 h3{
-  font-size:7px ;
+  font-size:11px ;
 }
 .aboutinbox1 p{
-  font-size:7px ;
+  font-size:10px ;
   font-family: 'popinse';
 }
 .aboutbox2{
@@ -1313,16 +1388,16 @@ height:100px ;
 }
 .aboutinbox3{
     width: 200px;
-  height: 150px;
+  height: 170px;
     gap: 10px;
     margin: 0px 10px;
 }
 .aboutinbox3 h4{
-font-size: 9px;
+font-size: 12px;
 margin: 0px;
 }
 .aboutinbox3 p{
-font-size: 8px;
+font-size: 9px;
 margin: 0px;
 }
 .aboutinbox3 button{
@@ -1352,5 +1427,4 @@ margin-bottom: 20px;
 }
 
 }
-
 
