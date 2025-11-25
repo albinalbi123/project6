@@ -19,18 +19,20 @@ p{
 
 /* a4ac86  ff8fab*/
 :root{
+    --hero-text-color:#880d1e;
     --color:black;
     --background-color:#99582a;
-    --main-color:#ff8fab;
+    --main-color:rgb(235, 69, 97);
     --back-color: #c9184a02;
-    --swip-color: #bb184663;
+    --swip-color: white;
+  
 }
 .over{
   overflow: hidden;
 }
 .navbar{
     /* background-color:; */
-    background-color: var(--swip-color);
+    background-color: var(--main-color);
 }
 .navbar-brand img{
   width: 80px;
@@ -39,7 +41,7 @@ p{
 .navbar li a {
 font-size: 15px;
 font-weight: 300;
-color: var(--color);
+color: white;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-style: italic;
@@ -65,7 +67,7 @@ z-index: 2;
 position: absolute;
 left: 200px;
 top: 170px;
-color: #880d1e;
+color:var(--hero-text-color);
 }
 .herobox1 .herotext h1{
 text-transform:uppercase;
@@ -99,7 +101,7 @@ color:white;
 .box1{
     width: 350px;
     height: 250px;
-    background-color:#c9184a;
+    background-color:#588157;
     border-radius: 20px;
     color:white;
   font-family: "Agbalumo", system-ui;
@@ -118,7 +120,7 @@ padding-top: 20px;
 .box2{
     width: 350px;
     height: 250px;
-    background-color:#a4133c;
+    background-color:#344e41;
     border-radius: 20px;
     color: white;
   font-family: "Agbalumo", system-ui;
@@ -142,7 +144,7 @@ color: #ff0a54;
 .box3{
     width: 350px;
     height: 250px;
-    background-color:#c9184a ;
+    background-color:#3a5a40 ;
     border-radius: 20px;
     color: white;
   font-family: "Agbalumo", system-ui;
@@ -159,7 +161,10 @@ padding-top: 20px;
 
 }
 .box1:hover,.box2:hover,.box3:hover{
-        box-shadow: 10px 10px 80px rgb(102, 2, 18);
+        /* box-shadow: 10px 10px 80px rgb(102, 2, 18); */
+background-color: white;
+color: black;
+border: solid 5px var(--main-color);
 }
 /*---------------------
   Product #880d1d87
@@ -289,7 +294,7 @@ padding-top: 20px;
  /* background: #000; */
       font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
       font-size: 14px;
-      color: #fff;
+      color: black;
       margin: 0;
       padding: 0;
             width: 100%;
@@ -327,10 +332,10 @@ padding-top: 20px;
       font-family: "Playball", cursive;
       font-weight: 400;
       font-style: normal;
-        box-shadow: 10px 5px 30px rgba(0, 0, 0, 0.307);
+        box-shadow: 10px 5px 30px rgba(0, 0, 0, 0.061);
         background-color:var(--swip-color);
-        color: white;
-        border:solid 2px ;
+        color: black;
+        /* border:solid 2px ; */
 
     }
 .swiper-slide:hover{
@@ -571,7 +576,7 @@ border-radius: 20px;
   height: 350px;
   bottom: 0px;
   right: 0px;
-  background-color: #2a422e79;
+  background-color:#52b788cb;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -603,7 +608,7 @@ max-height: 300px;
 font-family: "Courgette", cursive !important;
 font-weight: 400;
 font-style: normal;
-background-color: var(--back-color);
+background-color: var(--main-color);
 color: var(--color);
 padding: 20px 0px;
 margin-bottom: 40px ;
@@ -688,8 +693,8 @@ padding: 20px;
 /* ----------------footer-------------- */
 
 footer{
-  background-color: var(--back-color);
-  color:  var(--color);
+  background-color: var(--main-color);
+  color:  white;
   padding: 30px;
   text-align: center;
 }
@@ -1427,5 +1432,4 @@ margin-bottom: 20px;
 }
 
 }
-
 
